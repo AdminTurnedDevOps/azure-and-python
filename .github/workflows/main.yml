@@ -15,11 +15,11 @@ jobs:
         
     steps:
     - uses: actions/checkout@v2
-    - name: Lint with flake8
+    - name: Lint with Pylint
       run: |
-        pip3 install flake8
-        pip install flake8
-        flake8 all_resources/list_all_resources.py
+        pip install pylint
+        pip3 install pylint
+        pylint all_resources/list_all_resources.py
         
     - name: Test with pytest
       run: |
