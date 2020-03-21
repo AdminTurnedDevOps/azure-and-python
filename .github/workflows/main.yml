@@ -18,10 +18,10 @@ jobs:
     - name: Lint with Pylint
       run: |
         pip install pylint
-        pip3 install pylint
+        pip install setuptools
         pylint all_resources/list_all_resources.py
         
-    - name: Test with pytest
+    - name: Run Python Code
       run: |
         pip install azure.mgmt.resource
         pip install azure.common.client_factory
