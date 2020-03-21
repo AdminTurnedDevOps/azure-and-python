@@ -12,6 +12,8 @@ jobs:
     strategy:
       matrix:
         python-version: [3.7]
+        run: |
+          pip install flake8
         
     steps:
     - uses: actions/checkout@v2
