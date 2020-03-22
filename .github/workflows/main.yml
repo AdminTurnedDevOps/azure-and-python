@@ -25,4 +25,5 @@ jobs:
       working-directory: ./all_resources
       run: |
         pip3 install azure
+        pip3 instll azure-cli-core
         python3 list_resource_groups.py
