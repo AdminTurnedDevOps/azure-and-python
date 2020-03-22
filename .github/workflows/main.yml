@@ -26,4 +26,5 @@ jobs:
       run: |
         pip3 install azure
         pip3 install azure-cli-core
+        pip3 install setuptools
         python3 list_resource_groups.py
