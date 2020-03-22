@@ -26,7 +26,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-      run: |
+    - run: |
         pip3 install azure
         pip3 install azure-cli-core
         pip3 install setuptools
