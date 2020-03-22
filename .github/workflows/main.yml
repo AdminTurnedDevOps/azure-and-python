@@ -21,8 +21,11 @@ jobs:
 #        pylint all_resources/list_all_resources.py
 
     - uses: actions/checkout@v2
-    - name: Run Python Code
-      working-directory: ./all_resources
+    - name: Setup python
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+        architecture: x64
       run: |
         pip3 install azure
         pip3 install azure-cli-core
