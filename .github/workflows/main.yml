@@ -14,14 +14,15 @@ jobs:
         python-version: [3.7]
         
     steps:
-#    - uses: actions/checkout@v2
 #    - name: Lint with Pylint
 #      run: |
 #        pip install pylint
 #        pip install setuptools
 #        pylint all_resources/list_all_resources.py
-        
+
+    - uses: actions/checkout@v2
     - name: Run Python Code
+      working-directory: ./all_resources
       run: |
         pip3 install azure
         python3 list_resource_groups.py
