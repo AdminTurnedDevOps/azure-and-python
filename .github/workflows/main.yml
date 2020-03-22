@@ -14,11 +14,11 @@ jobs:
         python-version: [3.7]
         
     steps:
-#    - name: Lint with Pylint
-#      run: |
-#        pip install pylint
-#        pip install setuptools
-#        pylint all_resources/list_all_resources.py
+    - name: Lint with Pylint
+      run: |
+        pip install pylint
+        pip install setuptools
+        pylint all_resources/list_all_resources.py
 
     - uses: actions/checkout@v2
     - name: Setup python
