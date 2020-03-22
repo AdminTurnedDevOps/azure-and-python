@@ -23,6 +23,7 @@ jobs:
         
     - name: Run Python Code
       run: |
+        pip install azure
         pip install azure.mgmt.resource
         pip install azure.common.client_factory
         python all_resources/list_all_resources.py
