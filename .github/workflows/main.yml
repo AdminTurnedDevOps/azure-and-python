@@ -24,6 +24,4 @@ jobs:
     - name: Run Python Code
       run: |
         pip3 install azure
-        pip3 install azure.mgmt.resource
-        pip3 install azure.common.client_factory
         python3 all_resources/list_resource_groups.py
