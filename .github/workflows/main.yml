@@ -20,11 +20,11 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
-#    - name: Lint with Pylint
-#      run: |
-#        pip3 install pylint
-#        pip3 install setuptools
-#        pylint all_resources/list_all_resources.py
+    - name: Lint with Pylint
+      run: |
+        pip3 install pylint
+        pip3 install setuptools
+        pylint all_resources/list_all_resources.py
 
     - uses: azure/login@v1
       with:
