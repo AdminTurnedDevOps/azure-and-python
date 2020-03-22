@@ -24,4 +24,4 @@ jobs:
     - name: Run Python Code
       run: |
         pip3 install azure
-        python3 ./all_resources/list_resource_groups.py
+        python3 list_resource_groups.py
