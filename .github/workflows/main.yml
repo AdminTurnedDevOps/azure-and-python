@@ -26,6 +26,7 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
         architecture: x64
+        working-directory: ./all_resources
     - run: |
         pip3 install azure
         pip3 install azure-cli-core
