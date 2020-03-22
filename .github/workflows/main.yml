@@ -26,4 +26,4 @@ jobs:
         pip install azure
         pip install azure.mgmt.resource
         pip install azure.common.client_factory
-        python all_resources/list_all_resources.py
+        python all_resources/list_resource_groups.py
